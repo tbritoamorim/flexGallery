@@ -1,0 +1,109 @@
+/* line 2, C:/Users/tbrit/Documents/GIT projects/Flex Gallery/Sass/stylesheet.sass */
+body {
+  margin: 0;
+  font-size: 20px;
+  color: white;
+}
+
+/* line 7, C:/Users/tbrit/Documents/GIT projects/Flex Gallery/Sass/stylesheet.sass */
+.panels {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+/* line 12, C:/Users/tbrit/Documents/GIT projects/Flex Gallery/Sass/stylesheet.sass */
+.panel {
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'SKalam', cursive;
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+}
+
+/* line 24, C:/Users/tbrit/Documents/GIT projects/Flex Gallery/Sass/stylesheet.sass */
+.panel p {
+  text-transform: uppercase;
+  font-size: 18px;
+  text-shadow: 0 0 5px black;
+}
+
+/* line 28, C:/Users/tbrit/Documents/GIT projects/Flex Gallery/Sass/stylesheet.sass */
+.panel p:nth-child(2) {
+  font-size: 40px;
+}
+
+/* line 30, C:/Users/tbrit/Documents/GIT projects/Flex Gallery/Sass/stylesheet.sass */
+.panel.open-active {
+  flex: 2;
+}
+
+/* line 32, C:/Users/tbrit/Documents/GIT projects/Flex Gallery/Sass/stylesheet.sass */
+.panel.open-active > *:first-child {
+  transform: translateY(50%);
+  font-size: 25px;
+}
+
+/* line 35, C:/Users/tbrit/Documents/GIT projects/Flex Gallery/Sass/stylesheet.sass */
+.panel.open-active > *:last-child {
+  transform: translateY(-50%);
+  font-size: 25px;
+}
+
+/* line 38, C:/Users/tbrit/Documents/GIT projects/Flex Gallery/Sass/stylesheet.sass */
+.panel.open-active > *:nth-child(2) {
+  font-size: 0;
+}
+
+/* line 41, C:/Users/tbrit/Documents/GIT projects/Flex Gallery/Sass/stylesheet.sass */
+.panel > * {
+  margin: 0;
+  width: 100%;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 48, C:/Users/tbrit/Documents/GIT projects/Flex Gallery/Sass/stylesheet.sass */
+.panel > *:first-child {
+  transform: translateY(-100%);
+}
+
+/* line 50, C:/Users/tbrit/Documents/GIT projects/Flex Gallery/Sass/stylesheet.sass */
+.panel > *:last-child {
+  transform: translateY(100%);
+}
+
+/* line 54, C:/Users/tbrit/Documents/GIT projects/Flex Gallery/Sass/stylesheet.sass */
+.panel1 {
+  background-image: url("images/fiordland.jpg");
+}
+
+/* line 57, C:/Users/tbrit/Documents/GIT projects/Flex Gallery/Sass/stylesheet.sass */
+.panel2 {
+  background-image: url("images/laketaupo.jpg");
+}
+
+/* line 60, C:/Users/tbrit/Documents/GIT projects/Flex Gallery/Sass/stylesheet.sass */
+.panel3 {
+  background-image: url("images/mountcook.jpg");
+}
+
+/* line 63, C:/Users/tbrit/Documents/GIT projects/Flex Gallery/Sass/stylesheet.sass */
+.panel4 {
+  background-image: url("images/milford.jpg");
+}
+
+/* line 66, C:/Users/tbrit/Documents/GIT projects/Flex Gallery/Sass/stylesheet.sass */
+.panel5 {
+  background-image: url("images/bay.jpg");
+}
+
+/*# sourceMappingURL=../stylesheet.map */
